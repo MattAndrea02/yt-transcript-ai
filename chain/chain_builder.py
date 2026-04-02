@@ -14,4 +14,4 @@ def summary_chain(llm, output_parser):
 
 def qa_chain(llm, output_parser):
     prompt = create_qa_prompt_template()
-    return {"context": itemgetter("context"), "question": itemgetter("question")} | prompt | llm | output_parser
+    return {"context": itemgetter("context"), "question": itemgetter("question")} | prompt | llm | StrOutputParser()

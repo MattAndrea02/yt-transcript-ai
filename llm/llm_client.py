@@ -29,7 +29,7 @@ def embedding_model():
 
     return OllamaEmbeddings(
             base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
-            model=os.getenv("EMBEDDING_MODEL", "bge-m3"),
+            model=os.getenv("EMBEDDING_MODEL"),
             temperature=0.0
         )
     return None
