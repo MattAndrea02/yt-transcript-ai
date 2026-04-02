@@ -5,7 +5,9 @@ llm = get_llm()
 embedding_model = embedding_model()
 
 def main():
-    answer = answer_question("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "What is the main topic of the video?", llm=llm, em=embedding_model)
+    url = input("Insert URL: ")
+    question = input("Question: ")
+    answer = answer_question(url, question, llm=llm, em=embedding_model)
     print(answer)
 
 
