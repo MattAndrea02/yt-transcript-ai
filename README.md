@@ -107,7 +107,3 @@ python main.py
 | Orchestration | LangChain |
 | Vector store | FAISS |
 | Transcripts | youtube-transcript-api |
-
-## License
-
-Do whatever you want with it.
